@@ -68,7 +68,7 @@
       "tag": "proxy",
       "type": "selector",
       "outbounds": [
-        "auto" 
+        "auto"
         // Your OutBound tags
       ]
     },
@@ -79,7 +79,7 @@
       "interval": "5m0s",
       "interrupt_exist_connections": false,
       "outbounds": [
-// Your Outbound tags
+        // Your Outbound tags
       ],
       "tolerance": 50
     },
@@ -185,6 +185,13 @@
     "override_android_vpn": true
   },
   "experimental": {
+    "clash_api": {
+      "external_ui": "metacubexd",
+      "default_mode": "Enhanced",
+      "external_controller": "0.0.0.0:9090",
+      "external_ui_download_url": "https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip",
+      "external_ui_download_detour": "direct"
+    },
     "cache_file": {
       "enabled": true,
       "path": "cache.db",
