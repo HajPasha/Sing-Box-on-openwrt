@@ -1,7 +1,8 @@
 {
   "log": {
     "disabled": false,
-    "level": "info",
+    "level": "warn",
+    "output": "box.log",
     "timestamp": true
   },
   "dns": {
