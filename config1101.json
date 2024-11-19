@@ -64,43 +64,6 @@
       "type": "tun"
     }
   ],
-  "outbounds": [
-    {
-      "tag": "proxy",
-      "type": "selector",
-      "outbounds": [
-        "auto"
-        // Your OutBound tags
-      ]
-    },
-    {
-      "tag": "auto",
-      "url": "https://detectportal.firefox.com/success.txt",
-      "type": "urltest",
-      "interval": "5m0s",
-      "interrupt_exist_connections": false,
-      "outbounds": [
-        // Your Outbound tags
-      ],
-      "tolerance": 50
-    },
-    {
-      "tag": "direct",
-      "type": "direct"
-    },
-    {
-      "tag": "block",
-      "type": "block"
-    },
-    {
-      "tag": "bypass",
-      "type": "direct"
-    },
-    {
-      "tag": "dns-out",
-      "type": "dns"
-    }
-  ],
   "route": {
     "rules": [
       {
